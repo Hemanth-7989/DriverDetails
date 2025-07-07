@@ -1,0 +1,86 @@
+.document-left-container {
+    padding: 20px;
+    border-right: 1px solid #ddd;
+   width: 100%;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .supporting-documents {
+    color: #242F48;
+font-family: "Exo 2";
+font-size: 20px;
+margin-top: -3%;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 119.048% */
+  }
+  
+  .document-table {
+    width: 100%;
+  }
+  
+  .table-header, .table-row {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+  }
+  
+  .table-header {
+    border-radius: 10px 10px 0px 0px;
+    background: #364261;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+
+
+  }
+  .upload-btn-primary {
+    border-radius: 6px;
+    background: #09BCFF;
+    width: 173.91px;
+    height: 40px;
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  .upload-btn-primary:hover {
+    background-color: #07a6e0;
+  }
+  
+  
+  .table-row {
+    background-color: #fff;
+    transition: background-color 0.2s;
+  }
+  
+  .table-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .action-icons i {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .view-section {
+    background: #f7f9fb;
+  }
+  

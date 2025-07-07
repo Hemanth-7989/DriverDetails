@@ -1,0 +1,200 @@
+.action-wrapper {
+    padding: 20px;
+    font-family: "Exo 2", Arial, sans-serif;
+    position: relative;
+  }
+  
+  .action-header table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .action-header th,
+  .action-header td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .expire-soon,
+  .expire-urgent {
+    color: #0B5297;
+    font-weight: 500;
+  }
+  
+  .renew-all {
+    cursor: pointer;
+    text-align: right;
+    margin-top: 10px;
+    color: #0B5297;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .renewal-modal {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .order-summary {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .order-summary h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #0B5297;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .order-item img {
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .discount-code {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .discount-code input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .discount-code button {
+    padding: 8px 12px;
+    background-color: #0B5297;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .totals {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .totals h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0B5297;
+  }
+  
+  .payment-section {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+  }
+  
+  .payment-section input[type="email"],
+  .payment-section input[type="tel"],
+  .payment-section input[type="text"] {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .payment-methods {
+    margin-bottom: 20px;
+  }
+  
+  .card-btn, .bank-btn {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .upi-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .upi-options button {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .upi-other {
+    background: #5b3af9;
+    color: white;
+  }
+  
+  .city-zip {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .billing-checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .swipe-btn {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: #73BE44;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  }
+
+  .input-label {
+    color: var(--Gray-900, #111729);
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165%; /* 26.4px */
+    letter-spacing: 0.08px;
+  }
+  
+  

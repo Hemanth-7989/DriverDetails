@@ -1,0 +1,37 @@
+.driver-section-content {
+  height: 85%; /* Remaining height below the tab selector (8%) */
+  overflow-y: auto;
+}
+
+.driver-sections .sections-selector {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 5px;
+
+  /* Font Styling */
+  color: var(--EKA1);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.driver-sections {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.sections-selector {
+  white-space: nowrap;
+  min-width: auto; /* Adjust as needed */
+}
+
+.driver-sections .sections-selector:hover {
+  border-radius: 15px 15px 0px 0px;
+  border-top: 3px solid var(--EKA3);
+}
+.driver-sections .sections-selector.selected {
+  border-radius: 15px 15px 0px 0px;
+  border-top: 3px solid var(--EKA1);
+}

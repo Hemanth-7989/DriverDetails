@@ -1,0 +1,364 @@
+.bus-management {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar1 {
+  width: 550px;
+  border-right: 1px solid #ccc;
+  padding: 15px;
+}
+
+.search-box {
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 8px 8px 8px 35px; /* left padding for the icon */
+  border-radius: 10px;
+  border: 1px solid rgba(200, 200, 200, 0.85);
+}
+
+.vehicle-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+}
+
+.vehicle-item.selected {
+  border-radius: 10px;
+  border: 0.5px solid #a4cb75;
+  background: linear-gradient(90deg, #d8fbae 0.04%, #f7fff1 99.97%);
+}
+
+.vehicle-item .type {
+  color: #767676;
+  font-family: "Exo 2";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.vehicle-item .status {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.vehicle-item .status.active {
+  border-radius: 15px;
+  border: 0.3px solid #14970b;
+  background: #eff8e4;
+  margin-left: 67%;
+  color: #14970b;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.vehicle-item .status.renew {
+  border-radius: 15px;
+  border: 0.3px solid #970b0b;
+  background: #ffcfcf;
+  color: #970b0b;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 60%;
+}
+
+.bus-image {
+  width: 77px;
+  height: 49px;
+}
+
+.add-vehicle-btn {
+  width: 43%;
+  margin: 10px auto 0; /* Top margin 10px, auto on sides to center */
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  display: block; /* Ensure it's treated as a block-level element */
+}
+
+.content1 {
+  flex: 1;
+  padding: 10px;
+  margin-top: 1%;
+  margin-left: 2%;
+  background-color: #fff;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 10px;
+}
+
+.tab-btn {
+  color: #0b5297;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 20px;
+  background-color: #fff;
+  font-weight: 500;
+  line-height: 11px; /* 55% */
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border: none;
+  width: 201px;
+  height: 31px;
+  flex-shrink: 0;
+}
+
+.tab-btn.active {
+  border-radius: 15px 15px 0px 0px;
+  border-top: 3px solid #0b5297;
+  width: 201px;
+  height: 31px;
+  flex-shrink: 0;
+}
+
+.form-group input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  width: 173px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #73be44;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 161.111% */
+}
+
+.save-btn {
+  border-radius: 20px;
+  background: #73be44;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 161.111% */
+}
+
+.side {
+  width: 100px;
+  background-color: #fff;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.row .form-bus {
+  flex: 1;
+  min-width: 200px;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px;
+}
+
+.form-bus {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-bus label {
+  margin-bottom: 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.bus-text {
+  color: #0b5297;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+}
+
+.form-bus input,
+.form-bus select {
+  color: #4a4a4a;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 161.111% */
+  width: 100%;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #a4a4a4;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.edit-btn {
+  margin-left: 85%;
+  bottom: 75%;
+  right: 9%;
+}
+
+.search-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 280px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 16px;
+}
+
+.vrn-vehicle {
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-item.selected {
+  background-color: #d4f1d4;
+}
+
+.vehicle-info {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.vehicle-id {
+  color: #0b5297;
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.type {
+  font-size: 12px;
+  color: #666;
+}
+
+.status {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.status.active {
+  background-color: #d4edda;
+  color: green;
+}
+
+.status.deactivated {
+  background-color: #f8d7da;
+  color: red;
+}
+
+.arrow-icon {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.add-vehicle-btn {
+  /* width: 60%; */
+  width: 252px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 15px 15px;
+  border: 0.3px solid #0b5297;
+  background: #e6eef6;
+  color: #0b5297;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 11px; /* 55% */
+}
+
+.bus-header p {
+  width: 1260px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border-left: 3px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+  color: #0b5297;
+  font-family: "Exo 2";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #666;
+}

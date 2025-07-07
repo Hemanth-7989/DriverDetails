@@ -1,0 +1,370 @@
+  .daily-scheduling-container {
+  padding: 20px 0;
+}
+
+.daily-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.daily-header h3 {
+  font-size: 14px;
+  color: #0b5297;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px; /* 84.615% */
+}
+
+.subtext {
+  color: #0b5297;
+  font-family: "Exo 2";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+}
+
+.date-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.same-as-yesterday {
+  background-color: #3b82f6;
+}
+.same-as-yesterday label {
+  color: #0b5297;
+  font-family: "Exo 2";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 241.667% */
+}
+
+.daily-scheduling-table {
+  margin-bottom: 20px;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.daily-scheduling-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.daily-scheduling-table th {
+  background-color: #f9fafb;
+  padding: 12px 8px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+
+  color: #0b5297;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+.daily-scheduling-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+
+  color: #4a4a4a;
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px; /* 84.615% */
+}
+
+.shift-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.shift-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.shift-btn.active {
+  background-color: #1e40af;
+  color: white;
+  border-color: #1e40af;
+  margin-left: 40%;
+}
+.Head-Planned{
+  margin-top: 3%;
+  color: #0B5297;
+}
+
+.submit-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background: #0b5297;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.submit-btn:hover {
+  background-color: #059669;
+}
+
+.today-routes-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.today-routes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.today-routes-table th {
+  background-color: #f9fafb;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.today-routes-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.planned {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.Daily-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.Daily-action-btn:hover {
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90vw;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h3 {
+  color: #0B5297;
+text-align: center;
+font-family: "Exo 2";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: #374151;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+ color: #4A4A4A;
+text-align: center;
+font-family: "Exo 2";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  color: #374151;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #0b5297;
+  box-shadow: 0 0 0 3px rgba(11, 82, 151, 0.1);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 24px;
+  gap: 12px;
+}
+
+.cancel-trip-btn {
+  border-radius: 10px;
+border: 1px solid #E6E6E6;
+background: #FFF;
+color: #73BE44;
+text-align: center;
+font-family: "Exo 2";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #f3f4f6;
+}
+
+.save-changes-btn {
+border-radius: 10px;
+border: 1px solid #E6E6E6;
+background: #73BE44;
+color: #FFF;
+text-align: center;
+font-family: "Exo 2";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ 
+}
+.dropdown-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.dropdown-group label {
+color: #0B5297;
+text-align: center;
+font-family: "Exo 2";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+
+}
+
+.dropdown-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
